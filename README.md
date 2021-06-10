@@ -1,7 +1,7 @@
 # Blogger.IO Frontend
 
 This project was built using CRA from React.  I've implemented E2E testing, with Cypress, and integration, and unit, testing with in-build Jest. I used Redux to handle state of the app.
-You can find the deployed app [here](bloggerio-iiigygyiii.herokuapp.com)
+You can find the deployed app [here](https://bloggerio-iiigygyiii.herokuapp.com)
 
 ## How to run
 
