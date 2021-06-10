@@ -1,0 +1,10 @@
+.blog-item{
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 1em;
+  border: 1px black solid;
+  margin: 0 auto 1em auto;
+  padding: 0.75em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

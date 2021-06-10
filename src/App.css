@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer{
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+header{
+  display: flex;
+  margin-bottom: 1.5em;
+}
+footer{
+  font-weight: bold;
+  padding: 0.75em;
+}
+
+main{
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+main.main-blog{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 360px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 689px){
+  main.main-blog{
+    flex-direction: column;
+  }
+}
+

@@ -1,0 +1,239 @@
+.navbar{
+  background-color: rgb(0,0,0,0.4);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  width: 100%;
+}
+
+.m-right{
+  margin-right: auto;
+}
+
+.navbar-nav{
+  list-style: none;
+  padding: 0;
+  margin: auto 2em;
+  height: 4em;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item{
+  list-style: none;
+  list-style: none;
+  width: 7em;
+  transition: all 1s ease-in-out;
+}
+
+.nav-item:hover{
+  transform: scale(1.1);
+}
+
+.navbar-menu{
+  display: flex;
+  align-items: center;
+}
+
+.show-login, a{
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  font-size: 1.5em;
+  margin: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.show-login:hover, a:hover{
+  color: rgba(0,0,255,0.5);
+  transform: scale(1.1);
+}
+
+.show-login:active, a:active{
+  color: rgba(0,0,255,0.8);
+}
+
+.menu-btn{
+  transform: scale(0.8);
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5em;
+  height: 2.5em;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  border: 2px solid white;
+  display:none;
+}
+
+.menu-btn-burger{
+  width: 2em;
+  height: 0.25em;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before, .menu-btn-burger::after{
+  content: '';
+  position: absolute;
+  width: 2em;
+  height: 0.25em;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-burger::before{
+  transform: translateY(-0.8em) translateX(-1em);
+}
+
+.menu-btn-burger::after{
+  transform: translateY(0.8em) translateX(-1em);
+}
+
+.menu-btn.open .menu-btn-burger{
+  transform: translateX(-2em);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-burger::before{
+  transform: rotate(45deg) translate(.7em, -.7em);
+}
+
+.menu-btn.open .menu-btn-burger::after{
+  transform: rotate(-45deg) translate(.7em, .7em);
+}
+
+.brand{
+  margin-right: auto;
+  font-family: 'Mate SC', serif;
+}
+
+#sign-up-btn, .sign-up-btn{
+  background-color: #80b918;
+  padding: 0.25em 0.4em;
+  border-radius: 0.5em;
+  border: 1px #80b918 solid;
+  font-size: 1em;
+}
+
+#sign-up-btn:hover, .sign-up-btn:hover{
+  color: white;
+  background-color: #80b918;
+}
+
+#log-in-a{
+  color: white;
+  padding: 0 0.5em;
+  border-radius: 1em;
+  border: 1px rgb(46,197,182) solid;
+  background-color: rgb(46, 196, 182);
+  font-size: 1.4em;
+}
+
+#log-in-a:hover{
+  color: white;
+}
+
+#disp-user{
+  cursor:default;
+  color: white;
+  background-color: #16697a;
+  padding: 0 0.25em;
+  border-radius: 4px;
+  font-size: 1.4em;
+  max-width: max-content;
+  margin-left: 1em; 
+  font-weight: bold;
+}
+
+
+
+#disp-username{
+  color: green;
+}
+
+li.nav-item.dropdown-container#disp-user ul li.nav-item{
+  margin: 0 auto 0.5em auto;
+}
+
+#disp-username, #log-out{
+  cursor: pointer;
+  margin: 1em auto;
+  font-size:0.8em;
+}
+
+#log-out{
+  font-size: 0.8em;
+  color: red;
+}
+
+@media (max-width: 689px){
+  .navbar-menu{
+    height: auto;
+    justify-content: center;
+  }
+  ul.navbar-nav.show{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  ul.navbar-nav.show>.navbar-menu{
+    width: 100%;
+  }
+  .menu-btn{
+    display: flex;
+  }
+  .nav-list{
+    display:none;
+  }
+  .show{
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-menu.nav-list.show li{
+    margin: 0 auto 1em auto;
+  }
+  #disp-user{
+    margin: 0;
+    color: black;
+    border-radius: 1.5em;
+    background-color: rgba(255,255,255,0.6);
+  }
+  #disp-user ul{
+    padding: 0;
+  }
+}
+
+@media (min-width: 690px){
+  .dropdown-container{
+    position: relative;
+  }
+  
+  .dropdown-container ul{
+    padding: 0;
+    position: absolute;
+    right: 0px;
+    margin-top: 1em;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 1em;
+    background-color: rgb(255,255,255);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .dropdown-container:hover ul{
+    max-height: 400px;
+  }
+
+  .dropdown-container ul li{
+    margin: 1em;
+  }
+}

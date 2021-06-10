@@ -1,0 +1,50 @@
+hr{
+  width: 30%;
+  border: none;
+  border-bottom: 5px black dotted;
+}
+
+.blog-container{
+  min-width: 50vw;
+}
+
+.blog-card{
+  background-color: rgba(255,255,255,0.6);
+  padding: 0 0.5em;
+  border: 2px #081c15 solid;
+  border-radius: 16px;
+  text-align: center;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.show-info-btn, .hide-info-btn, .like-btn{
+  text-decoration: underline;  
+  cursor: pointer;
+  color: blue;
+}
+
+.like-btn{
+  color: black;
+  text-decoration: none;
+  margin-left: 2em;
+  padding: 0.5em;
+  background-color:#4267B29A;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.like-btn:hover{
+  background-color: #4267B2DB;
+}
+
+.like-btn:active{
+  background-color: #4267B2;
+}
+
+#link-to-user{
+  color:crimson;
+  font-size: 1.25em;
+
+}

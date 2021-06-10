@@ -1,0 +1,30 @@
+.blog-form label{
+  color: white;
+  margin: 0.5em;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.blog-form button{
+  font-size: 1.064em;
+  letter-spacing: 2px;
+  padding: 0.5em;
+}
+
+.blog-form input{
+  color: white;
+  font-weight: bold;
+  margin: 0.5em;
+}
+
+@media (max-width: 400px){
+  table#blog-form tbody tr>*{
+    display:block;
+  }
+}
+
+@media (max-width:690px) and (min-width:520px){
+  table#blog-form tbody tr>*{
+    display:block;
+  }
+}

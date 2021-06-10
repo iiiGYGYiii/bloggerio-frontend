@@ -1,0 +1,22 @@
+label{
+  text-transform: capitalize;
+}
+
+.login-input{
+  border: none;
+  border-bottom: 2px white solid;
+  color: rgba(0,0,0,0.6);
+  font-weight: bold;
+  margin: auto 1rem;
+  text-align: center;
+  background:none;
+}
+
+.login-input:hover{
+  background-color: rgba(255,255,255,0.3);
+}
+
+.login-input:focus{
+  background-color: rgba(255,255,255,0.6);
+  outline: none;
+}
